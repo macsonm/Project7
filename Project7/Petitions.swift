@@ -1,5 +1,5 @@
 import Foundation
 
-struct Petitions: Codable {
+struct Petitions: Decodable {
     var results: [Petition]
 }

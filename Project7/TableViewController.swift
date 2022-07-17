@@ -35,7 +35,7 @@ class TableViewController: UITableViewController {
         
         var content = cell.defaultContentConfiguration()
         content.text = petition.title
-        content.secondaryText = petition.body
+        content.secondaryText = petition.b
         
         cell.contentConfiguration = content
 

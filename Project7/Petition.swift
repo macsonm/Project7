@@ -1,7 +1,13 @@
 import Foundation
 
-struct Petition: Codable {
+struct Petition: Decodable {
     var title: String
-    var body: String
-    var signatureCount: Int
+    var b: String
+    var sign: Int
+
+enum CodingKeys: String, CodingKey {
+    case title
+    case b = "body"
+    case sign = "signatureCount"
+}
 }
